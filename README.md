@@ -85,6 +85,7 @@ in `backend/app/models/schemas.py` and the card components in
 schema, so a validated backend response always renders cleanly.
 
 ## Submission deliverables
+Video Walkthrough Link : https://drive.google.com/file/d/1ZP7f4zyTzt25ydONrpyHuU58ERxDLCz0/view?usp=sharing
 
 The system design, the production prompt/workflow, the JSON schema,
 three hallucination/failure scenarios, and a short technical note are
