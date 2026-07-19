@@ -101,8 +101,7 @@ in [`docs/`](docs/):
 - [`docs/Solution_Note.md`](docs/Solution_Note.md) — what was built,
   key assumptions, design decisions, limitations, and why Gemini was
   selected
-- [`docs/Demo_Video_Script.md`](docs/Demo_Video_Script.md) — a 3–5
-  minute demo script
+
 
 This repo is the implementation those documents describe — not a
 separate thing from it.
