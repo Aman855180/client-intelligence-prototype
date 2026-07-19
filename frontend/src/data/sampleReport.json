@@ -1,0 +1,213 @@
+{
+  "client_id": "anonymized_client_001",
+  "report_id": "report_week1_demo",
+  "period": {
+    "start_day": "Day 1",
+    "end_day": "Day 8",
+    "days_covered": ["Day 1", "Day 2", "Day 3", "Day 4", "Day 5", "Day 6", "Day 7", "Day 8"]
+  },
+  "weekly_summary": {
+    "value": "Client engaged daily across 8 days with generally positive mood early in the week, but reported recurring acidity/bloating, a low-energy and highly stressful Day 7 (falling asleep briefly during a work meeting), and improved sleep/energy by Day 8. Nutrition planning was a recurring struggle due to a hectic school/work schedule.",
+    "classification": "ai_inference",
+    "confidence": 0.65,
+    "evidence": [
+      { "day": "Day 7", "speaker": "Client", "quote": "During a meeting today I was so tired that my head went down on the table and I actually slept for a few seconds." },
+      { "day": "Day 8", "speaker": "Client", "quote": "Slept better last night, around 8 hours." }
+    ]
+  },
+  "nutrition": {
+    "adherence": {
+      "value": "Inconsistent — breakfast protein missing on some days, salad skipped, vegetable stocking incomplete, ACV habit not yet established",
+      "classification": "client_reported",
+      "confidence": 0.7,
+      "evidence": [
+        { "day": "Day 1", "speaker": "Client", "quote": "No. I still need to stock vegetables properly. Will do it tomorrow." },
+        { "day": "Day 3", "speaker": "Client", "quote": "Forgot ACV today. Not yet in the habit." }
+      ]
+    },
+    "notes": {
+      "value": "Client incorporated coach suggestions such as boiled chana/moong/chhole and attempted slower eating at school lunches",
+      "classification": "client_reported",
+      "confidence": 0.7,
+      "evidence": [
+        { "day": "Day 4", "speaker": "Client", "quote": "Lunch done. Trying to eat slowly." }
+      ]
+    }
+  },
+  "exercise": {
+    "steps": {
+      "value": "Reported figures: Day 3 ~8,000, Day 7 6,000, Day 8 ~8,000. No step data for Days 1, 2, 5, 6.",
+      "classification": "confirmed_fact",
+      "confidence": 0.6,
+      "evidence": [
+        { "day": "Day 3", "speaker": "Accountability Coach", "quote": "Today's update: Water 4 litres, Sleep 5 hours, Steps around 8,000, Exercise only walking." },
+        { "day": "Day 7", "speaker": "Client", "quote": "Steps 6,000 today." }
+      ]
+    },
+    "activity_type": {
+      "value": "Mix of walking, Surya Namaskar, stretching, breathing exercises, and household movement",
+      "classification": "client_reported",
+      "confidence": 0.75,
+      "evidence": [
+        { "day": "Day 1", "speaker": "Client", "quote": "Did some mopping, sweeping, Surya Namaskar and walking inside the house." }
+      ]
+    },
+    "consistency": {
+      "value": "Some form of movement reported on all 8 days, though duration/intensity varies",
+      "classification": "ai_inference",
+      "confidence": 0.5,
+      "evidence": [
+        { "day": "Day 8", "speaker": "Client", "quote": "Did 30 minutes exercise." }
+      ]
+    }
+  },
+  "sleep": {
+    "average_hours": {
+      "value": "Discrete values only: Day 1 ~5h, Day 3 5h, Day 7 ~5.5h, Day 8 ~8h. No data for Days 2, 4, 5, 6.",
+      "classification": "ai_inference",
+      "confidence": 0.4,
+      "evidence": [
+        { "day": "Day 1", "speaker": "Client", "quote": "Slept only around 5 hours last night." },
+        { "day": "Day 8", "speaker": "Client", "quote": "Slept better last night, around 8 hours." }
+      ]
+    },
+    "quality_notes": {
+      "value": "Sleep deprivation linked to late nights and correlated with acidity and fatigue; notably better on Day 8",
+      "classification": "ai_inference",
+      "confidence": 0.55,
+      "evidence": [
+        { "day": "Day 1", "speaker": "Client", "quote": "Daughter had exams, so I was awake late." }
+      ]
+    }
+  },
+  "water": {
+    "value": "Day 3: 4 litres; Day 8: ~3.5 litres. Other days mention water only as 'done' with no quantity.",
+    "classification": "confirmed_fact",
+    "confidence": 0.5,
+    "evidence": [
+      { "day": "Day 3", "speaker": "Accountability Coach", "quote": "Water 4 litres" },
+      { "day": "Day 8", "speaker": "Client", "quote": "Water around 3.5 litres." }
+    ]
+  },
+  "symptoms": {
+    "reported_symptoms": {
+      "value": "Acidity (Day 1, Day 2) and bloating (Day 2, Day 5, Day 6, Day 8); perceived weight gain despite reduced eating",
+      "classification": "client_reported",
+      "confidence": 0.8,
+      "evidence": [
+        { "day": "Day 1", "speaker": "Client", "quote": "Feeling some acidity since morning." },
+        { "day": "Day 6", "speaker": "Client", "quote": "Bloating is back and I feel like I have gained weight." }
+      ]
+    },
+    "frequency_pattern": {
+      "value": "Bloating/acidity recurs intermittently on at least 4 of 8 days rather than resolving",
+      "classification": "ai_inference",
+      "confidence": 0.5,
+      "evidence": [
+        { "day": "Day 2", "speaker": "Client", "quote": "Still having acidity and bloating." }
+      ]
+    }
+  },
+  "stress": {
+    "value": "Significant stress and exhaustion reported on Day 7 due to office pressure and falling asleep during a meeting; energy recovered by Day 8",
+    "classification": "client_reported",
+    "confidence": 0.85,
+    "evidence": [
+      { "day": "Day 7", "speaker": "Client", "quote": "There is a lot of office pressure and politics going on." },
+      { "day": "Day 7", "speaker": "Client", "quote": "Feeling very low." }
+    ]
+  },
+  "engagement": {
+    "level": {
+      "value": "High — client sent updates on all 8 days across sleep, water, steps, meals, and symptoms",
+      "classification": "ai_inference",
+      "confidence": 0.6,
+      "evidence": [
+        { "day": "Day 4", "speaker": "Client", "quote": "Breakfast was 1.5 vegetable chapatis with seeds and ajwain." }
+      ]
+    },
+    "responsiveness": {
+      "value": "Generally responsive same-day, with one missed accountability call on Day 7",
+      "classification": "client_reported",
+      "confidence": 0.6,
+      "evidence": [
+        { "day": "Day 7", "speaker": "Client", "quote": "Sorry I missed your call. There was a stressful situation at work." }
+      ]
+    },
+    "missed_checkins": {
+      "value": "One missed call from Accountability Coach on Day 7",
+      "classification": "confirmed_fact",
+      "confidence": 0.85,
+      "evidence": [
+        { "day": "Day 7", "speaker": "Accountability Coach", "quote": "Tried calling you. Please update when free." }
+      ]
+    }
+  },
+  "key_barriers": [
+    {
+      "description": "Difficulty stocking vegetables and planning meals in advance due to hectic school/work schedule",
+      "classification": "client_reported",
+      "confidence": 0.75,
+      "evidence": [
+        { "day": "Day 6", "speaker": "Client", "quote": "I am not getting enough time to plan meals. Next week should be easier." }
+      ]
+    },
+    {
+      "description": "ACV habit not yet established despite coach reminder",
+      "classification": "client_reported",
+      "confidence": 0.7,
+      "evidence": [
+        { "day": "Day 3", "speaker": "Client", "quote": "Forgot ACV today. Not yet in the habit." }
+      ]
+    }
+  ],
+  "risk_flags": [
+    {
+      "flag": "Acute fatigue / possible sleep deficit impacting work functioning",
+      "severity": "high",
+      "rule_triggered": "Client reported falling asleep involuntarily during a work meeting combined with same-day extreme low mood",
+      "classification": "ai_inference",
+      "confidence": 0.6,
+      "evidence": [
+        { "day": "Day 7", "speaker": "Client", "quote": "During a meeting today I was so tired that my head went down on the table and I actually slept for a few seconds." }
+      ]
+    },
+    {
+      "flag": "Persistent gastrointestinal symptoms (bloating/acidity)",
+      "severity": "medium",
+      "rule_triggered": "Bloating and/or acidity reported on 4 or more of 8 covered days without resolution",
+      "classification": "ai_inference",
+      "confidence": 0.55,
+      "evidence": [
+        { "day": "Day 2", "speaker": "Client", "quote": "Still having acidity and bloating." },
+        { "day": "Day 8", "speaker": "Client", "quote": "Still having bloating on and off." }
+      ]
+    }
+  ],
+  "coach_recommendations": [
+    {
+      "recommendation": "Follow up directly on Day 7 fatigue/stress episode and assess workload and sleep recovery before continuing standard nutrition coaching pace",
+      "priority": "high",
+      "classification": "ai_inference",
+      "confidence": 0.6,
+      "evidence": [
+        { "day": "Day 7", "speaker": "Coach", "quote": "That sounds like a very exhausting day. Please rest today. We also need to look at your sleep and stress more carefully." }
+      ]
+    },
+    {
+      "recommendation": "Help client build a simple, low-effort meal-prep routine given repeated barrier of limited planning time",
+      "priority": "medium",
+      "classification": "ai_inference",
+      "confidence": 0.55,
+      "evidence": [
+        { "day": "Day 6", "speaker": "Coach", "quote": "That could be one of the main barriers right now. Let's keep the plan practical." }
+      ]
+    }
+  ],
+  "conflicting_reports": [],
+  "missing_information": [
+    { "category": "water_intake", "note": "No quantity given for Days 1, 2, 4, 5, 6, 7" },
+    { "category": "steps", "note": "No step count for Days 1, 2, 5, 6" },
+    { "category": "weight", "note": "No weight data for Days 1, 2, 3, 4, 6, 7" }
+  ]
+}

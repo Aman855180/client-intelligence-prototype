@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #131b29;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Visible keyboard focus everywhere, incl. custom buttons */
+:focus-visible {
+  outline: 2px solid #2f6f5e;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}
